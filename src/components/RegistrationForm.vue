@@ -146,6 +146,26 @@
 
       </div>
     </div>
+
+    <!-- Signature Badge -->
+    <div class="signature-wrapper">
+      <a
+        href="https://mohamedasal-portfolio.vercel.app/"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="signature-badge"
+        aria-label="Mohamed Ibrahim Asal Portfolio"
+      >
+        <span class="sig-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="10"/>
+            <path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
+          </svg>
+        </span>
+        <span class="sig-text">© All Rights Reserved to Eng. Mohamed Ibrahim Asal</span>
+      </a>
+    </div>
+
   </section>
 </template>
 
@@ -540,5 +560,81 @@ const resetForm = () => {
 .alert-content p {
   font-size: 0.9rem;
   margin-top: 4px;
+}
+
+/* ============================================================
+   SIGNATURE BADGE
+   ============================================================ */
+.signature-wrapper {
+  display: flex;
+  justify-content: center;
+  padding-top: 48px;
+}
+
+.signature-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 22px;
+  /* Frosted glass dark navy */
+  background: rgba(6, 18, 35, 0.65);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(201, 148, 42, 0.25);
+  border-radius: 50px;
+  text-decoration: none;
+  cursor: pointer;
+  transition:
+    padding 0.35s cubic-bezier(0.25, 0.8, 0.25, 1),
+    border-color 0.35s ease,
+    background 0.35s ease,
+    box-shadow 0.35s ease;
+}
+
+.signature-badge:hover {
+  padding: 10px 30px;
+  border-color: rgba(201, 148, 42, 0.7);
+  background: rgba(6, 18, 35, 0.85);
+  box-shadow:
+    0 0 0 1px rgba(201, 148, 42, 0.15),
+    0 0 24px rgba(201, 148, 42, 0.18),
+    0 8px 32px rgba(0, 0, 0, 0.3);
+}
+
+/* Globe icon */
+.sig-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  color: rgba(201, 148, 42, 0.6);
+  width: 16px;
+  height: 16px;
+  transition: color 0.35s ease, filter 0.35s ease;
+}
+
+.sig-icon svg {
+  width: 100%;
+  height: 100%;
+}
+
+.signature-badge:hover .sig-icon {
+  color: #E8B84B;
+  filter: drop-shadow(0 0 6px rgba(232, 184, 75, 0.8));
+}
+
+/* Copyright text */
+.sig-text {
+  font-size: 0.75rem;
+  font-weight: 500;
+  color: rgba(201, 148, 42, 0.5);
+  white-space: nowrap;
+  letter-spacing: 0.02em;
+  transition: color 0.35s ease, text-shadow 0.35s ease;
+}
+
+.signature-badge:hover .sig-text {
+  color: rgba(232, 184, 75, 0.9);
+  text-shadow: 0 0 12px rgba(232, 184, 75, 0.3);
 }
 </style>
