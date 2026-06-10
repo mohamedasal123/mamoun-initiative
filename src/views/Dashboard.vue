@@ -85,6 +85,8 @@
                 <option value="ميت معاند">ميت معاند</option>
                 <option value="جلموه">جلموه</option>
                 <option value="ميت فضالة">ميت فضالة</option>
+                <option value="شنشاوالغراقة">شنشاوالغراقة</option>
+
               </select>
             </div>
           </div>
@@ -389,7 +391,8 @@ const getVillageClass = (villageName) => {
     'ميت مسعود': 'mit-masoud',
     'ميت معاند': 'mit-moanad',
     'جلموه': 'jalmoah',
-    'ميت فضالة': 'mit-fadala'
+    'ميت فضالة': 'mit-fadala' , 
+    'شنشاوالغراقة' : 'red'
   }
   return map[villageName] || 'default'
 }
