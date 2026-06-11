@@ -173,7 +173,7 @@
 <script setup>
 import { ref, onMounted } from 'vue'
 
-const GOOGLE_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbzUL_yXBarN6k1O-0LF7j5PzZhjdu3oRPpu4v9RiWlXBt0gcCPOhKZ7xxTQNvEi63GB5g/exec'
+const GOOGLE_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbyT6D214e2G5P4y6T-s8vQNvnTnTBHSOE3vOBEwgXoRZ6IpJNK_ucRX6zNhlWo-5-JZGw/exec'
 const name = ref('')
 const phone = ref('')
 const village = ref('')
