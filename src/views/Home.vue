@@ -1,11 +1,12 @@
 <template>
   <div class="home-page">
     <HeroSection />
-    <RegistrationForm />
+    <ClosedForm />
+    <!-- <RegistrationForm /> -->
   </div>
 </template>
 
 <script setup>
 import HeroSection from '../components/HeroSection.vue'
-import RegistrationForm from '../components/RegistrationForm.vue'
+import ClosedForm from '../components/ClosedForm.vue'
 </script>
